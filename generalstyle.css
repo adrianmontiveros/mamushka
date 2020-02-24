@@ -11,8 +11,9 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-rows: 100px 100% 2em;
+   display: grid;
+    grid-auto-flow:row;
+    height: 100vh;
 }
 
 /*
@@ -23,7 +24,7 @@ header {
 
 .hdcontainer {
 
-    background-color: hsla(0, 0%, 0%, 0.2);
+    background-color: hsla(0, 100%, 39%, .5);
     border: solid 5px white;
     border-radius: 2em;
     display: grid;
@@ -75,37 +76,60 @@ nav li {
     display: none;
 }
 
-/*
+
 .suggestion {
-    font-family: sans-serif;
-    font-size: 1.5em;
+    display: block;
+    font-size: 2rem;
     font-weight: bold;
     text-align: center;
     margin: .5em 0;
+    background-color: hsla(0, 100%, 39%, 0.1);
+    padding: .5em 0;
+    -ms-flex-item-align:center;
+    align-self:center;
 }
-*/
 
-
-
-.mncontainer {
-    padding: 1em;
-    background-color: hsla(0, 100%, 39%, 0.5);
-    border: none;
+main {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 1.5rem;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+
 }
 
-.mnelements {
+main h2 {
+    display: block;
+    text-align: center;
+    font-size: 1.7rem;
+    background-color: hsla(0, 100%, 39%, 0.7);
+
+}
+
+
+
+.container {
+    padding: 1.5em;
+    margin: .5em;
+    background-color: hsla(0, 100%, 39%, 0.3);
+    border: none;
+    border-radius: 1.3em;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    justify-self: center;
+    padding: 1em;
+}
+
+
+.products {
 
     padding: 10px;
     margin: 10px;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-
-}
-
-div.mnelements {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -119,66 +143,15 @@ div.mnelements {
     justify-content: center;
     text-align: center;
     background-color: hsla(0, 0%, 0%, 0.2);
+    border-radius: 1.5em;
 
 }
 
-
-
-.startercontainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-}
-
-.maincontainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-}
-
-.dessertcontainer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-flow: column;
-    flex-flow: column;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-
-}
-
-.mnelements img {
+.products img {
 
     max-width: 75%;
-
-    -ms-flex-item-align: center;
-
-    align-self: center;
+-ms-flex-item-align: center;
+align-self: center;
 
     padding-bottom: 1em;;
 
@@ -186,48 +159,16 @@ div.mnelements {
 
 
 .ftcontainer {
+    height: auto;
     text-align: center;
     background-color: black;
     color: white;
     font-weight: lighter;
+    padding: 3rem;
+    margin-bottom: -2em;
+    overflow: hidden;
+
 
 
 }
 
-.ftcolumncontainer {
-    background-color: bisque;
-    border: 1px solid white;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-}
-
-
-.ftcolumn {
-    background-color: chartreuse;
-    border: 1px solid white;
-    min-height: 15vh;
-    margin: .5rem;
-    border-radius: .7rem;
-
-}
-
-
-
-.bodybox {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.foodcontainer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
-}

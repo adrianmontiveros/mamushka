@@ -9,10 +9,12 @@
     <link rel="stylesheet" href="style.css">
     <style>
         @import url('https://fonts.googleapis.com/css?family=Righteous&display=swap');
+
     </style>
 </head>
 
 <body>
+
     <header>
         <div class="hdcontainer bdcontainer">
             <div class="logo">
@@ -36,73 +38,82 @@
             </nav>
         </div>
     </header>
-    <!-- <div class="suggestion">Make your own menu</div> -->
+
+    <div class="suggestion">Make your own menu</div>
+
     <main>
-        <article class="mncontainer bdcontainer">
-            <div class="mnleftcontainer"></div>
-            <div class="foodcontainer">
-                <div class="startercontainer">
-                    <h2>Starters</h2>
-                    <div class="mnelements starter">
-                        <img src="/img/small/baltiskbondesuppe-sm.jpg" alt="bondesuppe"> <span class="description">description</span> <span class="price">§45</span> <span class="veg">veg</span> <span class="allerg">gluten</span> <span id="elemid">
-                            <!-- mathrandom --></span>
-                    </div>
-                </div>
-                <div class="maincontainer">
-                    <h2>Mains</h2>
-                    <div class="mnelements main">
-                        <img src="/img/small/boef-sm.jpg" alt=""> <span class="description">description</span> <span class="price">§45</span> <span class="veg">veg</span> <span class="allerg">gluten</span> <span id="elemid">
-                            <!-- mathrandom --></span>
-                    </div>
-                </div>
-                <div class="dessertcontainer">
-                    <h2>Desserts</h2>
-                    <div class="mnelements dessert"><img src="/img/small/kaviarpandekager-sm.jpg" alt=""> <span class="description">description</span> <span class="price">§45</span> <span class="veg">veg</span> <span class="allerg">gluten</span> <span id="elemid">
-                            <!-- mathrandom --></span></div>
-                </div>
-            </div>
-            <div class="mnrightcontainer"></div>
 
+       <section class="starterscontainer container">
 
-        </article>
+        </section>
+
+        <section class="mainscontainer container">
+
+        </section>
+
+        <section class="dessertscontainer container">
+
+        </section>
 
     </main>
 
-    <template class="mncontainer bdcontainer">
 
-        <div class="mnleftcontainer"></div>
-
-        <div class="foodcontainer">
-            <div class="startercontainer">
-                <h2>Starters</h2>
-                <div class="mnelements starter">
-                    <img src="/img/small/baltiskbondesuppe-sm.jpg" alt="bondesuppe">
-                       <span class="description">description</span> <span class="price">§45</span>
-                       <span class="veg">veg</span>
-                       <span class="allerg">gluten</span>
-                       <span id="elemid">
-                        <!-- mathrandom --></span>
+            <template class="starterscontainer container">
+            <h2>Starters</h2>
+            <article class="starters">
+                <h3>Name</h3>
+                <div class="products">
+                    <img src="" alt="platepicture">
+                    <span class="elemid">ID</span>
+                    <span class="description">description</span>
+                    <span class="price">price</span>
+                    <span class="soldout">soldout</span>
+                    <span class="discount">discount</span>
+                    <span class="vegetarian">vegetarian</span>
+                    <span class="alcohol">alcohol</span>
                 </div>
-            </div>
-            <div class="maincontainer">
-                <h2>Mains</h2>
-                <div class="mnelements main">
-                    <img src="/img/small/boef-sm.jpg" alt=""> <span class="description">description</span> <span class="price">§45</span> <span class="veg">veg</span> <span class="allerg">gluten</span> <span id="elemid">
-                        <!-- mathrandom --></span>
+            </article>
+
+        </template>
+
+        <template class="mainscontainer container">
+            <h2>Mains</h2>
+            <article class="mains">
+                <h3>Name</h3>
+                <div class="products">
+                    <img src="" alt="platepicture">
+                    <span class="elemid">ID</span>
+                    <span class="description">description</span>
+                    <span class="price">price</span>
+                    <span class="soldout">soldout</span>
+                    <span class="discount">discount</span>
+                    <span class="vegetarian">vegetarian</span>
+                    <span class="alcohol">alcohol</span>
                 </div>
-            </div>
-            <div class="dessertcontainer">
-                <h2>Desserts</h2>
-                <div class="mnelements dessert"><img src="/img/small/kaviarpandekager-sm.jpg" alt=""> <span class="description">description</span> <span class="price">§45</span> <span class="veg">veg</span> <span class="allerg">gluten</span> <span id="elemid">
-                        <!-- mathrandom --></span></div>
-            </div>
-        </div>
-        <div class="mnrightcontainer"></div>
+            </article>
+
+        </template>
+
+        <template class="dessertscontainer container">
+            <h2>Desserts</h2>
+            <article class="desserts">
+                <h3>Name</h3>
+                <div class="products dessert">
+                    <img src="" alt="platepicture">
+                    <span class="elemid">ID</span>
+                    <span class="description">description</span>
+                    <span class="price">price</span>
+                    <span class="soldout">soldout</span>
+                    <span class="discount">discount</span>
+                    <span class="vegetarian">vegetarian</span>
+                    <span class="alcohol">alcohol</span>
+                </div>
+            </article>
+
+        </template>
 
 
-    </template>
-
-    <footer>
+       <footer>
         <div class="ftcontainer bdcontainer">
             <!--  <div class="ftcolumncontainer ftrow">
                     <div class="ftcolumn"></div>
@@ -115,4 +126,7 @@
 
     </footer>
 </body>
-<script src="mamushka.js"></script></html>
+
+<script src="mamushka.js"></script>
+
+</html>
